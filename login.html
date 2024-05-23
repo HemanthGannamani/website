@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL WITH KSH</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="banner-container">
+            <img src="images/Screenshot 2024-05-22 160806.png" alt="travel">
+        </div>
+        <div class="title-container">
+            <h1>TRAVEL WITH KSH</h1> 
+        </div>
+    </header>
+    <section>
+        <div class="information">
+            <p>Travel is the movement of people between distant geographical locations.
+                Travel can be done by foot, bicycle, automobile, train, boat, bus, 
+                airplane, ship or other means, with or without luggage, and can be 
+                one way or round trip.[1] Travel can also include relatively short 
+                stays between successive movements, as in the case of tourism.
+            </p>
+        </div>
+        <div align="center">
+            <img src="images/first img.jpg" alt="travel">
+        </div>
+    </section>
+    <footer align="center">
+        <div>
+            <h2>
+                Many Travel information click the below botton
+            </h2> 
+        </div>
+
+    </footer>
+
+    <form align="center" id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <button type="submit">Login</button>
+    </form>
+
+    <script>
+        
+        const userCredentials = [
+            { username: 'hemanthchowdary', password: 'hemanthchowdary' }
+        ];
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            
+            if (username.length !== 15 || password.length !== 15) {
+                alert("Both username and password must be exactly 15 characters long.");
+                return;
+            }
+
+          
+            const user = userCredentials.find(cred => cred.username === username && cred.password === password);
+
+            if (!user) {
+                alert("Invalid username or password.");
+                return;
+            }else{
+                window.location.href = 'travel.html'; 
+            }
+            alert("Login successful!");
+           
+        });
+    </script>
+
+</body>
+</html>

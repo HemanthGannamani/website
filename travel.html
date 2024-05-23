@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelWorld</title>
+    <link rel="stylesheet" href="travel.css">
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <h1 align="center">TRAVEL WITH KSH</h1>
+        </div>
+        
+        
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Your Adventure Awaits</h2>
+            <button onclick="exploreDestinations()">Explore Destinations</button>
+        </section>
+
+        <section class="destinations" id="destinations">
+            <h2>Popular Destinations</h2>
+            <div class="destination" data-destination="Paris">
+                <h3>Paris</h3>
+                
+                    <img src="images/Screenshot 2024-05-22 105040.png" alt="image">
+                
+               
+                
+                <p>The City of Light awaits you with its rich history and romantic ambiance.</p>
+                <p><strong>Cost:</strong> $1500</p>
+                <p><strong>Best Time to Visit:</strong> April to June, October to early November</p>
+                <p><strong> visiting places are:</strong></p>
+                <p> .Louvre Museum</p>
+                <p> .Palace of Versilles</p>
+                <p> .Musee d' Orsey</p>
+                <p> .Arc the Triomphe</p>
+                <p><strong> we are providing food in palace of versilles in restaurant</strong></p>
+                
+                <p> .Restaurant Angelina Versailles for lunch</p>
+
+            </div>
+            <div class="destination" data-destination="Bali">
+                <h3>Bali</h3>
+                
+                <img src="images/Screenshot 2024-05-22 105902.png" alt="image">
+                
+                <p>Experience the serenity and beauty of Bali, a tropical paradise.</p>
+                <p><strong>Cost:</strong> $1200</p>
+                <p><strong>Best Time to Visit:</strong> April to October</p>
+                <p><strong> visiting places are:</strong></p>
+                <p> .Tanah Lot</p>
+                <p> .Uluwatu Temple</p>
+                <p> .Sacred Monkey Forest Sanctuary</p>
+                <p> .Tegenungan Waterfall</p>
+                <p><strong>we are providing food in uluwatu temple in restaurant</strong></p>
+                <p> .Ulu Garden</p>
+            </div>
+            <div class="destination" data-destination="New York">
+                <h3>New York</h3>
+                
+                <img src="images/Screenshot 2024-05-22 105509.png" alt="image">
+                
+                <p>The city that never sleeps offers endless adventures and excitement.</p>
+                <p><strong>Cost:</strong> $1800</p>
+                <p><strong>Best Time to Visit:</strong> April to June, September to early November</p>
+                <p><strong>visiting places are:</strong></p>
+                <p> .The Manhattan Tour</p>
+                <p> .The Big Apple Tour</p>
+                <p> .The Empire Tour</p>
+                <p><strong>we are providing food in The big apple tour in restaurant</strong></p>
+                <p> .Royal India Palace and Restaurant </p>
+            </div>
+            <div class="destination" data-destination="Tokyo">
+                
+                <h3>Tokyo</h3>
+                <img src="images/Screenshot 2024-05-22 110205.png" alt="image">
+                
+                <p>Discover the vibrant culture and technological wonders of Tokyo.</p>
+                <p><strong>Cost:</strong> $2000</p>
+                <p><strong>Best Time to Visit:</strong> March to May, October to November</p>
+                <p><strong>visiting places are:</strong></p>
+                <p> .Tokyo tower</p>
+                <p> .Meiji Jingu</p>
+                <p> .Senso-Ji</p>
+                <p> .Yoyogi park</p>
+                <p><strong>we are providing food in Meiji Jingu in restaurant</strong></p>
+                <p> .The Palace Lounge</p>
+            </div>
+            <div class="destination" data-destination="Sydney">
+                <h3>Sydney</h3>
+                
+                <img src="images/sydney.jpg" alt="image">
+                
+                <p>Explore the iconic Sydney Opera House and stunning harbor.</p>
+                <p><strong>Cost:</strong> $1700</p>
+                <p><strong>Best Time to Visit:</strong> September to November, March to May</p>
+                <p><strong> visiting places are:</strong></p>
+                <p> .Queen Victoria Building</p>
+                <p> .Sydney Opera House</p>
+                <p> .Darling Harbour</p>
+                <p> .Luna park Sydney</p>
+                <p><strong>we are providing food in Sydney Opera House in restaurant</strong></p>
+                <p> .Aria Restaurant Sydney</p>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="formMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TravelWorld. All rights reserved.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* Existing CSS styles here */
+
+header .heading {
+    background-color: #003399;
+    color: white;
+    width: 500px;
+    height: 40px;
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dynamic-content {
+    padding: 2em;
+    text-align: center;
+    background-color: #fff;
+}
+
+.dynamic-content h2 {
+    color: #0044cc;
+}
+
+.dynamic-content button {
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.dynamic-content button:hover {
+    background-color: #003399;
+}
+
+#contentArea {
+    margin-top: 2em;
+    text-align: left;
+}
+.spe {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;          
+    border: 1px solid #ccc;
+}
+section.spe img {
+    max-width: 100%;        
+    height: auto; 
+}
